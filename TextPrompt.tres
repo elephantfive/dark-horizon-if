@@ -1,0 +1,8 @@
+[gd_resource type="Resource" format=3 uid="uid://tn2hgkacqfny"]
+
+[ext_resource type="Script" uid="uid://cbr6ohommlhtk" path="res://text_prompt.gd" id="1_nhobl"]
+
+[resource]
+script = ExtResource("1_nhobl")
+potential_args = null
+text_outcomes = null

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cj5cg07ouqlgj"]
+
+[ext_resource type="Script" uid="uid://cbr6ohommlhtk" path="res://text_prompt.gd" id="1_v6k81"]
+
+[node name="TextPrompt" type="Node" unique_id=519333209]
+script = ExtResource("1_v6k81")
