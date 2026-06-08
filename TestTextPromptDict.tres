@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TextPromptDict" format=3 uid="uid://blgverrrrdw54"]
+
+[ext_resource type="Script" uid="uid://chpusv6o24oqy" path="res://text_prompt_dict.gd" id="1_4j6b7"]
+
+[resource]
+script = ExtResource("1_4j6b7")
+potential_args = ["attack"]
+metadata/_custom_type_script = "uid://chpusv6o24oqy"

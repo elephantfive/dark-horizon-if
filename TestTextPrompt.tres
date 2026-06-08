@@ -4,4 +4,10 @@
 
 [resource]
 script = ExtResource("1_upui3")
+potential_args = ["attack"]
+text_prompt_dict = {
+"attack": {
+"display_text": "You just hit that guy!"
+}
+}
 metadata/_custom_type_script = "uid://cbr6ohommlhtk"
