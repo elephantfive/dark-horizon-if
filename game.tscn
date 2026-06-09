@@ -1,10 +1,20 @@
 [gd_scene format=3 uid="uid://djxj563h6xb70"]
 
-[ext_resource type="Script" uid="uid://cgxryua00fgxl" path="res://test_script.gd" id="1_80nbo"]
-[ext_resource type="Resource" uid="uid://c4ekkq63h744g" path="res://TestTextPrompt.tres" id="2_e2o6t"]
+[ext_resource type="Script" uid="uid://dk1kxgv4ymvui" path="res://test_prompt.gd" id="1_80nbo"]
 
 [node name="Game" type="Node2D" unique_id=55460109]
 
-[node name="Node" type="Node" parent="." unique_id=1909791141]
+[node name="Node" type="Node" parent="." unique_id=141979169]
 script = ExtResource("1_80nbo")
-text_prompt = ExtResource("2_e2o6t")
+
+[node name="LineEdit" type="LineEdit" parent="Node" unique_id=2087939576]
+offset_right = 68.5
+offset_bottom = 31.0
+
+[node name="Label" type="Label" parent="Node" unique_id=724211770]
+offset_left = 9.0
+offset_top = 117.0
+offset_right = 49.0
+offset_bottom = 140.0
+
+[connection signal="text_submitted" from="Node/LineEdit" to="Node" method="_on_line_edit_text_submitted"]

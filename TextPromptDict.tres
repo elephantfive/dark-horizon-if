@@ -1,6 +1,0 @@
-[gd_resource type="Resource" format=3 uid="uid://by0jha4x8na8q"]
-
-[ext_resource type="Script" uid="uid://chpusv6o24oqy" path="res://text_prompt_dict.gd" id="1_7fulo"]
-
-[resource]
-script = ExtResource("1_7fulo")
