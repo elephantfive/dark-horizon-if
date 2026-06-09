@@ -1,18 +1,13 @@
+class_name TextPrompt
+
 extends Node
 
-@onready var label = $"../Label"
-@onready var line_edit = $"../LineEdit"
+@onready var line_edit = $LineEdit
+@onready var label = $Label
 
-var args = {
-	['attack', 'hit', 'punch', 'stab']:
-		{'new_display':'this is the placeholder for attack',
-		'new_args': 0},
-}
-
+var display_text: String
+var args = {}
 var prev_args = args
-
-var attack_args = {}
-
 
 func _on_line_edit_text_submitted(new_text):
 	for key in args.keys():
@@ -22,3 +17,7 @@ func _on_line_edit_text_submitted(new_text):
 				args = args[key]['new_args']
 			else:
 				print('End of the line.')
+
+
+func update_label():
+	label.text = display_text
