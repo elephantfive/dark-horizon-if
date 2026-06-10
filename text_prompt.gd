@@ -18,7 +18,6 @@ func _ready():
 func _on_line_edit_text_submitted(new_text):
 	line_edit.clear()
 	for arg in args:
-		print(arg.valid_arguments)
 		if new_text in arg.valid_arguments:
 			label.text = read_text(arg.response_text)
 			if arg.new_arguments.size() > 0:
