@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Argument" format=3 uid="uid://p8a0uhuerh0o"]
+
+[ext_resource type="Script" uid="uid://cks1j8eei0dcw" path="res://argument.gd" id="1_p7mb0"]
+
+[resource]
+script = ExtResource("1_p7mb0")
+valid_arguments = Array[String](["attack", "hit", "punch"])
+response_text = "res://bed/attack.txt"
+end_conversation = true
+metadata/_custom_type_script = "uid://cks1j8eei0dcw"
