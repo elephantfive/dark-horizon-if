@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dcgpjha6ydvjv"]
 
-[ext_resource type="Script" uid="uid://dk1kxgv4ymvui" path="res://text_prompt.gd" id="1_2ccw1"]
+[ext_resource type="Script" uid="uid://dk1kxgv4ymvui" path="res://resources/text_prompt.gd" id="1_2ccw1"]
 [ext_resource type="Texture2D" uid="uid://b1hl6eyfnhjfx" path="res://icon.svg" id="2_v8tio"]
 
 [node name="Node" type="Control" unique_id=910483]
@@ -17,7 +17,8 @@ color = Color(0.3553136, 0.35531354, 0.35531357, 1)
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=1197197840]
 layout_mode = 0
-offset_right = 1152.0
+offset_left = 7.0
+offset_right = 1143.0
 offset_bottom = 648.0
 alignment = 2
 
@@ -36,10 +37,12 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 250)
 layout_mode = 2
 size_flags_vertical = 3
+autowrap_mode = 3
 
 [node name="LineEdit" type="LineEdit" parent="VBoxContainer2/VBoxContainer" unique_id=783482329]
 unique_name_in_owner = true
 layout_mode = 2
+placeholder_text = "What would you like to do?"
 
 [node name="CloseButton" type="Button" parent="." unique_id=1392976365]
 unique_name_in_owner = true

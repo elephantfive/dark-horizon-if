@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="AdditionalEffect" format=3 uid="uid://c6b3hldha1qqe"]
+
+[ext_resource type="Script" uid="uid://clxnvqyr1gg1n" path="res://resources/additional_effect.gd" id="1_4o7hq"]
+
+[resource]
+script = ExtResource("1_4o7hq")
+target_var = "default_text"
+modify_value = "res://bed/sleep_effect.txt"
+metadata/_custom_type_script = "uid://clxnvqyr1gg1n"

@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="AdditionalEffect" format=3 uid="uid://c7306a5am3uks"]
+
+[ext_resource type="Script" uid="uid://clxnvqyr1gg1n" path="res://resources/additional_effect.gd" id="1_78d14"]
+
+[resource]
+script = ExtResource("1_78d14")

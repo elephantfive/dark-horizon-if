@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://djxj563h6xb70"]
 
-[ext_resource type="PackedScene" uid="uid://dcgpjha6ydvjv" path="res://TextPrompt.tscn" id="1_80nbo"]
-[ext_resource type="PackedScene" uid="uid://k0numaji8tci" path="res://prompt_button.tscn" id="1_fc0e3"]
-[ext_resource type="Script" uid="uid://cks1j8eei0dcw" path="res://argument.gd" id="4_7jktm"]
+[ext_resource type="PackedScene" uid="uid://dcgpjha6ydvjv" path="res://resources/TextPrompt.tscn" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://k0numaji8tci" path="res://resources/prompt_button.tscn" id="1_fc0e3"]
+[ext_resource type="Script" uid="uid://cks1j8eei0dcw" path="res://resources/argument.gd" id="4_7jktm"]
+[ext_resource type="Resource" uid="uid://kx2loom1vxkh" path="res://bed/sleep.tres" id="5_7jktm"]
 [ext_resource type="Resource" uid="uid://p8a0uhuerh0o" path="res://bed/attack.tres" id="5_ryrav"]
 
 [node name="Game" type="Node2D" unique_id=55460109]
@@ -11,5 +12,5 @@
 prompt = NodePath("../BedPrompt")
 
 [node name="BedPrompt" parent="." unique_id=910483 instance=ExtResource("1_80nbo")]
-args = Array[ExtResource("4_7jktm")]([ExtResource("5_ryrav")])
+args = Array[ExtResource("4_7jktm")]([ExtResource("5_ryrav"), ExtResource("5_7jktm")])
 default_text = "res://bed/bed_default.txt"
