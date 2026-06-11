@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="Argument" format=3 uid="uid://kx2loom1vxkh"]
 
 [ext_resource type="Script" uid="uid://cks1j8eei0dcw" path="res://resources/argument.gd" id="1_5dlbp"]
-[ext_resource type="Resource" uid="uid://c6b3hldha1qqe" path="res://bed/sleep_effect.tres" id="1_xpcxc"]
+[ext_resource type="Resource" uid="uid://c6b3hldha1qqe" path="res://village/hovel/bed/sleep_effect.tres" id="1_xpcxc"]
 
 [resource]
 script = ExtResource("1_5dlbp")

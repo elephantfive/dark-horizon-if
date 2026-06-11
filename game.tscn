@@ -2,11 +2,25 @@
 
 [ext_resource type="PackedScene" uid="uid://dcgpjha6ydvjv" path="res://resources/TextPrompt.tscn" id="1_80nbo"]
 [ext_resource type="PackedScene" uid="uid://k0numaji8tci" path="res://resources/prompt_button.tscn" id="1_fc0e3"]
+[ext_resource type="Script" uid="uid://cks1j8eei0dcw" path="res://resources/argument.gd" id="3_7jktm"]
+[ext_resource type="Resource" uid="uid://kx2loom1vxkh" path="res://village/hovel/bed/sleep.tres" id="4_ryrav"]
+[ext_resource type="Resource" uid="uid://p8a0uhuerh0o" path="res://village/hovel/bed/attack.tres" id="5_eow3j"]
 
 [node name="Game" type="Node2D" unique_id=55460109]
 
-[node name="BedButton" parent="." unique_id=1599481702 node_paths=PackedStringArray("prompt") instance=ExtResource("1_fc0e3")]
+[node name="Village" type="Node" parent="." unique_id=1217311154]
+
+[node name="Hovel" type="Node" parent="Village" unique_id=380915315]
+
+[node name="Bed" type="Node" parent="Village/Hovel" unique_id=1804160359]
+
+[node name="BedButton" parent="Village/Hovel/Bed" unique_id=1599481702 node_paths=PackedStringArray("prompt") instance=ExtResource("1_fc0e3")]
 prompt = NodePath("../BedPrompt")
 
-[node name="BedPrompt" parent="." unique_id=910483 instance=ExtResource("1_80nbo")]
+[node name="BedPrompt" parent="Village/Hovel/Bed" unique_id=910483 instance=ExtResource("1_80nbo")]
+args = Array[ExtResource("3_7jktm")]([ExtResource("4_ryrav"), ExtResource("5_eow3j")])
 default_text = "res://bed/bed_default.txt"
+
+[node name="Nightstand" type="Node" parent="Village/Hovel" unique_id=954254142]
+
+[node name="Study" type="Node" parent="Village/Hovel" unique_id=1312214364]
