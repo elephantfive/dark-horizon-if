@@ -12,23 +12,35 @@ extends Control
 var display_text: String
 
 func _ready():
-	display_text = default_text
+	read_text(default_text)
 	update_label()
 	
 func _on_line_edit_text_submitted(new_text):
+	var valid_args: int = 0
+	var selected_arg: Argument
 	line_edit.clear()
 	for arg in args:
-		if new_text in arg.valid_arguments:
-			label.text = read_text(arg.response_text)
-			if arg.new_arguments.size() > 0:
-				args = arg.new_arguments
-			elif arg.end_conversation:
-				close_button.show()
+		for valid_arg in arg.valid_arguments:
+			if valid_arg in new_text:
+				valid_args += 1
+				selected_arg = arg
+	if valid_args == 1:
+		read_text(selected_arg.response_text)
+		if selected_arg.new_arguments.size() > 0:
+			args = selected_arg.new_arguments
+		elif selected_arg.end_conversation:
+			close_button.show()
+	elif valid_args > 1:
+		display_text = "That is too complicated."
+	else:
+		display_text = "You can't do that here."
+	print(str(valid_args))
+	update_label()
 
 func read_text(file):
 	var text = FileAccess.open(file, FileAccess.READ)
 	var content = text.get_as_text()
-	return content
+	display_text = content
 
 func update_label():
 	label.text = display_text

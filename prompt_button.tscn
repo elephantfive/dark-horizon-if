@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://k0numaji8tci"]
+
+[ext_resource type="Texture2D" uid="uid://b1hl6eyfnhjfx" path="res://icon.svg" id="1_qsfrp"]
+[ext_resource type="Script" uid="uid://dtll1n32uxbbx" path="res://bed_2d.gd" id="2_sjadk"]
+
+[node name="PromptButton" type="Button" unique_id=1599481702 node_paths=PackedStringArray("prompt")]
+offset_right = 136.0
+offset_bottom = 136.0
+icon = ExtResource("1_qsfrp")
+script = ExtResource("2_sjadk")
+prompt = NodePath("")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

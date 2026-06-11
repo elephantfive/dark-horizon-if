@@ -1,6 +1,6 @@
 extends Button
-@onready var bed = $"../Bed"
 
+@export var prompt: TextPrompt
 
 func _on_pressed():
-	bed.show()
+	prompt.show()
