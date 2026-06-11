@@ -52,7 +52,7 @@ func _on_line_edit_text_submitted(new_text):
 func read_text(file):
 	var text = FileAccess.open(file, FileAccess.READ)
 	var content = text.get_as_text()
-	display_text = content
+	display_text = content.replace("\n", " ").replace("  ", "\n")
 
 func update_label():
 	label.text = display_text

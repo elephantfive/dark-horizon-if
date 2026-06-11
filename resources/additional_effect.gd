@@ -1,7 +1,8 @@
+##An additional effect for a TextPrompt to execute.
+
 class_name AdditionalEffect
 
 extends Resource
-
 var target: TextPrompt
 @export var target_var: String
 @export var modify_value: String
