@@ -8,8 +8,6 @@ visible = false
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_2ccw1")
-args = null
-default_text = null
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=925570017]
 layout_mode = 0

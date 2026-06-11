@@ -9,6 +9,7 @@ extends Control
 
 @export var args: Array[Argument]
 @export var default_text: String
+@export var whatever: Resource
 var display_text: String
 var default_args: Array[Argument]
 
