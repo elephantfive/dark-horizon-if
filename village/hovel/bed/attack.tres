@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_p7mb0")
 valid_arguments = Array[String](["attack", "hit", "punch"])
-response_text = "res://bed/attack.txt"
+response_text = "res://village/hovel/bed/attack.txt"
 end_conversation = true
 metadata/_custom_type_script = "uid://cks1j8eei0dcw"

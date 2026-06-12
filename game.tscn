@@ -19,7 +19,7 @@ prompt = NodePath("../BedPrompt")
 
 [node name="BedPrompt" parent="Village/Hovel/Bed" unique_id=910483 instance=ExtResource("1_80nbo")]
 args = Array[ExtResource("3_7jktm")]([ExtResource("4_ryrav"), ExtResource("5_eow3j")])
-default_text = "res://bed/bed_default.txt"
+default_text = "res://village/hovel/bed/bed_default.txt"
 
 [node name="Nightstand" type="Node" parent="Village/Hovel" unique_id=954254142]
 

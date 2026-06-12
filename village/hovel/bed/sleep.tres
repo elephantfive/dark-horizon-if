@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource("1_5dlbp")
 valid_arguments = Array[String](["sleep", "lay", "rest"])
-response_text = "res://bed/sleep.txt"
+response_text = "res://village/hovel/bed/sleep.txt"
 end_conversation = true
 additional_effect = ExtResource("1_xpcxc")
 metadata/_custom_type_script = "uid://cks1j8eei0dcw"

@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_4o7hq")
 target_var = "default_text"
-modify_value = "res://bed/sleep_effect.txt"
+modify_value = "res://village/hovel/bed/sleep_effect.txt"
 metadata/_custom_type_script = "uid://clxnvqyr1gg1n"
